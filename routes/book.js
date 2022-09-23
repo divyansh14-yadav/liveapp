@@ -10,7 +10,7 @@ router.post('/book',(req,res)=>{
     const book=new Book({
         name:req.body.bookname,
         author:{
-            name:req.body.bookname,
+            name:req.body.authorname,
             age:req.body.authorage
         },
         genre:req.body.genre
@@ -23,6 +23,9 @@ router.post('/book',(req,res)=>{
     })
 })
 
+router.get('/get',(req,res)=>{
+    res.send("hello")
+});
 
 export default router
 
