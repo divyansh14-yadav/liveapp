@@ -1,11 +1,14 @@
 import  express  from "express";
 import Book from "../models/book.js";
+// import validateBook from "../models/book.js";
+import validateBook from "../models/function.js";
 const router=express.Router()
 
 
 // POST: to create the book
 
 router.post('/book',(req,res)=>{
+  validateBook()
     
     const book=new Book({
         name:req.body.bookname,

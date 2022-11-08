@@ -45,7 +45,7 @@
 
 import  express  from "express";
 import mongoose from "mongoose";
-import dotenv from 'dotenv'
+import dotenv from 'dotenv';
 import router from './routes/book.js'
 
 dotenv.config()
